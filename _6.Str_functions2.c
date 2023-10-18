@@ -40,7 +40,7 @@ int _strncmp(char *s1, char *s2, int n)
 }
 
 /**
- * Putchar_ Functio to write a character c to the stdout
+ * Putchar_ - Functio to write a character c to the stdout
  * @c: Input character to print
  * Return: On success 1, -1 if failed.
  */

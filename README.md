@@ -17,7 +17,7 @@
 	- You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository.
 # Output Examples
 - Example of error with sh:
-```bash 
+```bash
 $ echo "qwerty" | /bin/sh
 /bin/sh: 1: qwerty: not found
 $ echo "qwerty" | /bin/../bin/sh
