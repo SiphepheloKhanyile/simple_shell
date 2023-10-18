@@ -8,7 +8,9 @@
 
 char **parse_command(char *command, char *separator)
 {
-	unsigned int i = 0, qWord = 0, len = 0;
+	unsigned int len = 0;
+	unsigned int qWord = 0;
+	unsigned int i = 0;
 	char **parameter;
 	char *s;
 

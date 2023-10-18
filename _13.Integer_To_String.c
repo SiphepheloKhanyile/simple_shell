@@ -8,9 +8,9 @@
 
 void RvsString(char *str, int len)
 {
-	int i = 0;
 	int j = len - 1;
 	int x;
+	int i = 0;
 
 
 	if (str[i] == '-')

@@ -6,12 +6,12 @@
  **/
 void Print_Environment(char **env)
 {
-	char **Env;
+	char **Env_;
 
 
-	for (Env = env; *env != NULL; env++)
+	for (Env_ = env; *env != NULL; env++)
 	{
-		*Env = *env;
-		Puts_(*Env);
+		*Env_ = *env;
+		Puts_(*Env_);
 	}
 }

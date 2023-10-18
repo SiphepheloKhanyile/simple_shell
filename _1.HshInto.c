@@ -7,13 +7,13 @@ int wait_(char **argv, char *Command, int QExecutes);
  **/
 void Into_Hsh(char **env, char **argv)
 {
+	ssize_t qCharComm;
 	size_t sizebuffer;
 	char *Command = NULL;
 	pid_t pid;
 	int IndBuilt = 0;
-	static int Statuss;
 	static int qExecutes = 1;
-	ssize_t qCharComm;
+	static int Statuss;
 
 	Command = NULL;
 	Prompt_();
@@ -62,9 +62,9 @@ void Into_Hsh(char **env, char **argv)
  **/
 void Execute_(char *Command, char **env)
 {
+	char *forCommand;
 	char **parameter;
 	int IndEx = 0;
-	char *forCommand;
 
 	forCommand = strdup(Command);
 	rmvSpaces(forCommand);
@@ -114,8 +114,8 @@ void Execute_(char *Command, char **env)
  **/
 int wait_(char **argv, char *Command, int Qex)
 {
-	int Statuss;
 	char **passedCommand;
+	int Statuss;
 
 	wait(&Statuss);
 	if (WIFEXITED(Statuss))

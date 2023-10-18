@@ -4,15 +4,14 @@
  * @command:  line of command
  * @env: var enviroments
  * @status: status process
- * Return: 1 CD DONE, 2 EXIT DONE, 0 NO ONE
- * Authors - Carlos Garcia - Ivan Dario Lasso - Cohort 10 - Cali
+ * Return: 1 CD if DONE else return 2 EXIT DONE else 0 fo NO ONE
  **/
 int built_in(char *command, char **env, int status)
 {
 	char **commandCD = NULL;
 	size_t DirSizeBuffer = 512;
-	static char *currDir;
 	static char currDirector[512];
+	static char *currDir;
 	static int CounterForAlloc;
 
 	if (_strncmp(command, "cd", 2) == 0)
@@ -46,6 +45,6 @@ int built_in(char *command, char **env, int status)
 		free(commandCD);
 		Prompt_();
 		return (1);
-	} /*CD LOGICAL*/
+	} /*"cd" Logic*/
 return (built_exit(command, status));
 }

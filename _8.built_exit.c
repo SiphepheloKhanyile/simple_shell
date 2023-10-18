@@ -8,9 +8,9 @@
 
 int built_exit(char *TheCommandand, int status)
 {
-	char *TheCommand;
 	char **StatusOfExit;
 	int CodeExit;
+	char *TheCommand;
 
 	TheCommand = _String_Dupl(TheCommandand);
 	rmvSpaces(TheCommand);

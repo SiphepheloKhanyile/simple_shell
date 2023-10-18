@@ -2,16 +2,16 @@
 
 /**
  * Puts_ - function to print a string
- * @str : the pointer to char being passed
+ * @string : the pointer to char being passed
  * Return:  void
  */
-void Puts_(char *str)
+void Puts_(char *string)
 {
 	int i = 0;
 
-	while (*(str + i) != '\0')
+	while (*(string + i) != '\0')
 	{
-		Putchar_(*(str + i));
+		Putchar_(*(string + i));
 		i++;
 
 

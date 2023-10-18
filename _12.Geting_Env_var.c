@@ -7,10 +7,9 @@
  **/
 char *Get_Environment(char *var, char **env)
 {
-
+	size_t length = 0;
 	char **Env_var;
 	char *Env_value;
-	size_t length = 0;
 
 	length = _String_Length(var);
 

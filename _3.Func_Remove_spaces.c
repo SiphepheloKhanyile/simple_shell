@@ -7,10 +7,9 @@
 
 void rmvSpaces(char *str)
 {
-	size_t LengthOfString = _String_Length(str);
 	char Return[512];
-	size_t b = 0;
-	size_t a = 0;
+	size_t b = 0, a = 0;
+	size_t LengthOfString = _String_Length(str);
 
 	for (a = 0; a < LengthOfString; ++a)
 	{

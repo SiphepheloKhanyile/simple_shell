@@ -9,12 +9,12 @@
 
 int Get_Path(char **param, char **env)
 {
+	int IndNil = 0;
 	struct stat strct;
+	char **folder_dir;
 	char *dorPath1 = malloc(512);
 	char *PATH;
 	char **pathPassed;
-	char **folder_dir;
-	int IndNil = 0;
 	int i = 0;
 
 	PATH = Get_Environment("PATH", env);

@@ -7,8 +7,8 @@
  **/
 int  Exec_(char **param, char **env)
 {
-	int Execute_;
 	int ReturnPath;
+	int Execute_;
 	int i = 0;
 
 	ReturnPath = Get_Path(param, env);
@@ -36,7 +36,5 @@ int  Exec_(char **param, char **env)
 	{
 		return (1);
 	}
-
-	/*check free(param); later for VALGRIND*/
 	return (0);
-}
+}/*check free(param); later for VALGRIND*/
