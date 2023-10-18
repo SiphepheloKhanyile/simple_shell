@@ -1,14 +1,14 @@
 #include "shell.h"
 /**
  *_String_Length - Function to calculate length of the string
- *@s: string
+ *@string: string
  *Return: the length os string
  */
-int _String_Length(char *s)
+int _String_Length(char *string)
 {
 	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; string[i] != '\0'; i++)
 	{
 		;
 	}
@@ -17,24 +17,24 @@ int _String_Length(char *s)
 
 /**
  *_strncmp - Function to compare two strings
- *@s1: 1st string to comparate
- *@s2: 2nd string to comparate
- *@n: the number of characters to comparate
+ *@string1: 1st string to comparate
+ *@string2: 2nd string to comparate
+ *@number: the number of characters to comparate
  *Return: 0 is success o -1 is fail
  */
 
-int _strncmp(char *s1, char *s2, int n)
+int _strncmp(char *string1, char *string2, int number)
 {
 
 	int i = 0;
 
 	do {
-		if (s1[i] != s2[i])
+		if (string1[i] != string2[i])
 			return (-1);
 
 		i++;
 
-	} while (i != n);
+	} while (i != number);
 
 	return (0);
 }
