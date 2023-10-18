@@ -8,5 +8,6 @@ void Prompt_(void)
 	if (isatty(STDIN_FILENO))
 	{
 		Putchar_('$');
+		Putchar_(' ');
 	}
 }
